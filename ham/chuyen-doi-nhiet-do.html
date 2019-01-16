@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Temperature Converter</h1>
+	<p>Type a value in the Fahrenheit field to convert the value to Celcius:</p>
+	<div>
+		<input type="number" placeholder="Nhap nhiet do" oninput="doinhietdo(this.value)" onchange="doinhietdo(this.value)" value="">
+		<p id="kq"></p>	
+	</div>
+	<script>
+		function doinhietdo(valNum) {
+			valNum = parseFloat((valNum -32) /1.8);
+			document.getElementById('kq').innerHTML = "<span>"+"Celcius: " + valNum + "</span>";
+		}
+	</script>
+</body>
+</html>

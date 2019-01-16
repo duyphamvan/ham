@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var star = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+		var constellation = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquaila","Ursa Major","Leo"];
+		var b = prompt("Nhap ten chom sao");
+		var result = '';
+		function foundstar(a) {
+			for (var i = 0; i < a.length; i++) {
+				if (b==a[i]) {
+				    result = constellation[i];
+				    alert(result);
+				} 
+			}
+			if (b=='') {
+				alert("World not found");
+			}
+		}
+		foundstar(star);
+
+	</script>
+</body>
+</html>

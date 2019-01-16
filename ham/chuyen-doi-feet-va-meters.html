@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" placeholder="Nhap so vao o sau" id="nhap">
+	
+	<select name="" id="feet">
+		<option value="Feet" >Feet</option>
+		<option value="Meters" >Meters</option>
+	</select>
+	<select name="" id="meters">
+		<option value="Meters" >Meters</option>
+		<option value="Feet">Feet</option>
+	</select>
+	<input type="button" value="Click Here" onclick="change();">
+	<p id="kq"></p> 
+	<script>
+ 		
+ 		function change() {
+ 			var a = document.getElementById('feet').value;
+ 			var b = document.getElementById('meters').value;
+ 			var c = document.getElementById('nhap').value;
+ 			var display = document.getElementById('kq');
+
+ 			if (a === 'Feet' && b === 'Meters') {
+ 			    
+ 			    var result = c * 0.305;
+ 			    display.innerHTML = ` Result is  ${result}.`;
+ 			} else if(a==='Feet' && b === 'Feet'){
+ 			   
+ 			   var result = c;
+ 			    display.innerHTML = ` Result is  ${result}.`;
+ 			} else if(a==='Meters' && b==='Meters'){
+
+ 				var result = c;
+ 				display.innerHTML = ` Result is  ${result}.`;
+ 			}else {
+ 				
+ 				var result = c*3.279;
+ 				display.innerHTML = ` Result is  ${result}.`;
+ 			}		
+}
+	change();
+		
+	</script>
+</body>
+</html>

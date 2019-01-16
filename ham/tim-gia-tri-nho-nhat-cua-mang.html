@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var arr1 = [3,5,1,8,-3,7,8];
+		var arr2 = [7,12,6,9,20,56,89,-1];
+		var arr3 = [];
+		var arr4 = [0,0,0,0,0];
+		function minNum(num) {
+			var min = num[0];
+			for (var i = 0; i < num.length; i++) {
+				if (num[i]<min) {
+				 min = num[i];
+				}
+			}
+			if (num.length == 0) {
+				return -1;
+			}
+			return min;
+		}
+		alert(minNum(arr1));
+		alert(minNum(arr2));
+		alert(minNum(arr3));
+		alert(minNum(arr4));
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var texts = ['baby', 'shark', 'do', 'do', 'do', 1, 2, 3];
+		function foundText(text) {
+			var check = false;
+			var total = 0;
+			for ( var i = 0; i < texts.length; i++) {
+				if (texts[i] === text) {
+				   total++;
+				   check = true;
+				} 
+			}
+			if (check == true) {
+			    alert('So lan xuat hien cua phan tu ' + text + ' la ' + total + ' lan');
+			} else {
+			    alert(-1);
+			}
+			
+		}
+		foundText('do');
+		foundText('me');
+	</script>
+</body>
+</html>
